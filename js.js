@@ -290,18 +290,159 @@ function checkInputColor() {
         finalCardText.style.opacity = '0';
     }
 }
+  function toggleDisplay3() {
+    var finalCardWarp = document.querySelector('.final_card_warp3');
+    var finalCardText = document.querySelector('.none_3');
 
-  $(function () {
-    $("input").keydown(function () {
-      // Save old value.
-      if (!$(this).val() || (parseInt($(this).val()) <= 399 && parseInt($(this).val()) >= 0))
-      $(this).data("old", $(this).val());
+    if (finalCardWarp.style.opacity === '1') {
+        finalCardWarp.style.opacity = '0';
+        finalCardText.style.opacity = '1';
+    } else {
+        finalCardWarp.style.opacity = '1';
+        finalCardText.style.opacity = '0';
+    }
+}
+  function toggleDisplay4() {
+    var finalCardWarp = document.querySelector('.final_card_warp4');
+    var finalCardText = document.querySelector('.none_4');
+
+    if (finalCardWarp.style.opacity === '1') {
+        finalCardWarp.style.opacity = '0';
+        finalCardText.style.opacity = '1';
+    } else {
+        finalCardWarp.style.opacity = '1';
+        finalCardText.style.opacity = '0';
+    }
+}
+  function toggleDisplay5() {
+    var finalCardWarp = document.querySelector('.final_card_warp5');
+    var finalCardText = document.querySelector('.none_5');
+
+    if (finalCardWarp.style.opacity === '1') {
+        finalCardWarp.style.opacity = '0';
+        finalCardText.style.opacity = '1';
+    } else {
+        finalCardWarp.style.opacity = '1';
+        finalCardText.style.opacity = '0';
+    }
+}
+  function toggleDisplay6() {
+    var finalCardWarp = document.querySelector('.final_card_warp6');
+    var finalCardText = document.querySelector('.none_6');
+
+    if (finalCardWarp.style.opacity === '1') {
+        finalCardWarp.style.opacity = '0';
+        finalCardText.style.opacity = '1';
+    } else {
+        finalCardWarp.style.opacity = '1';
+        finalCardText.style.opacity = '0';
+    }
+}
+
+const checkbox = document.getElementById('myCheckbox');
+const checkboxContainer = document.getElementById('checkboxContainer');
+const checkIcon = document.getElementById('checkIcon');
+
+checkbox.addEventListener('change', function() {
+  checkboxContainer.classList.toggle('bg-transparent', !this.checked);
+  checkboxContainer.classList.toggle('bg-blue-500', this.checked);
+  checkIcon.classList.toggle('hidden', !this.checked);
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var header = document.querySelector('.sticky-header');
+
+    function updateHeader() {
+        if (window.pageYOffset > 100) {
+            header.classList.remove('sticky-header');
+            header.classList.add('fixed-header', 'visible');
+        } else {
+            header.classList.remove('fixed-header', 'visible');
+            header.classList.add('sticky-header');
+        }
+    }
+
+    window.addEventListener('scroll', updateHeader);
+});
+
+
+function handleClick(elementId) {
+    // Hide the checkmark for all checkboxes and show 'x mark'
+    const checkboxes = document.querySelectorAll('.boxes-select');
+    checkboxes.forEach((checkbox) => {
+      checkbox.nextElementSibling.querySelector('.fa-check').classList.add('hidden');
+      checkbox.nextElementSibling.querySelector('.fa-xmark').classList.remove('hidden');
+      checkbox.nextElementSibling.classList.remove('bg-theta-gradient-4'); // Remove the class
+      checkbox.nextElementSibling.classList.add('bg-pi'); // Add the default class
+      checkbox.nextElementSibling.style.borderColor = 'grey';
     });
-    $("input").keyup(function () {
-      // Check correct, else revert back to old value.
-      if (!$(this).val() || (parseInt($(this).val()) <= 399 && parseInt($(this).val()) >= 0))
-        ;
-      else
-        $(this).val($(this).data("old"));
-    });
-  });
+
+    // Show the checkmark and hide 'x mark' for the clicked checkbox
+    const clickedCheckbox = document.getElementById(elementId);
+    clickedCheckbox.nextElementSibling.querySelector('.fa-check').classList.remove('hidden');
+    clickedCheckbox.nextElementSibling.querySelector('.fa-xmark').classList.add('hidden');
+    clickedCheckbox.nextElementSibling.classList.remove('bg-pi'); // Remove the default class
+    clickedCheckbox.nextElementSibling.classList.add('bg-theta-gradient-4'); // Add the new class
+    clickedCheckbox.nextElementSibling.style.borderColor = 'blue';
+
+    // Define the values for each plan
+    const planValues = {
+      price10upper: {
+        total_price_full: "$59.80",
+        total_discount_per: "50%",
+        total_price_discount: "-$29.90",
+        total_price: "$29.90"
+      },
+      price20upper: {
+        total_price_full: "$33.20",
+        total_discount_per: "40%",
+        total_price_discount: "-$13.30",
+        total_price: "$19.90"
+      },
+      price30upper: {
+        total_price_full: "$290",
+        total_discount_per: "52%",
+        total_price_discount: "-$151",
+        total_price: "$139"
+      }
+    };
+
+    // Update values based on the selected checkbox
+    const selectedPlanValues = planValues[elementId];
+
+    // Update total_price_full
+    document.querySelector('.total_price_full').textContent = selectedPlanValues.total_price_full;
+
+    // Update total_discount_per
+    document.querySelector('.total_discount_per').textContent = selectedPlanValues.total_discount_per;
+
+    // Update total_price_discount
+    document.querySelector('.total_price_discount').textContent = selectedPlanValues.total_price_discount;
+
+    // Update total_price
+    document.querySelector('.total_price').textContent = selectedPlanValues.total_price;
+  }
+
+  // Trigger handleClick for the first checkbox after the page loads
+  window.onload = function() {
+    const firstCheckbox = document.getElementById('price10upper');
+    firstCheckbox.click();
+    handleClick('price10upper');
+  };
+//   $(function () {
+//     $("input").keydown(function () {
+//       // Save old value.
+//       if (!$(this).val() || (parseInt($(this).val()) <= 399 && parseInt($(this).val()) >= 0))
+//       $(this).data("old", $(this).val());
+//     });
+//     $("input").keyup(function () {
+//       // Check correct, else revert back to old value.
+//       if (!$(this).val() || (parseInt($(this).val()) <= 399 && parseInt($(this).val()) >= 0))
+//         ;
+//       else
+//         $(this).val($(this).data("old"));
+//     });
+//   });
