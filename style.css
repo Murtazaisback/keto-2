@@ -29,8 +29,12 @@
     --pi: hsla(0, 0%, 100%, .2);
     --red: red;
     --theta-gradient-4: linear-gradient(90deg, #00acff 0%, #235aff);
+    --recipies-blue: #00a5ff;
+    ---baui_c: #282638;
 
+    --calories-arch: #282638;
 
+    
     --main-color: white;
     
 
@@ -153,8 +157,33 @@
     --lead-nutrition-expert: rgba(15, 14, 30, .6);
     --flip-card-shadow: 0 7px 3px 0 #151515;
     --bash: var(--ash);
+    --bmi-dot: var(--main-color);
+    --main-bg: #151226;
+    --metabolic-age-purple: #bf51e8;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 }
+
+
 *{
     box-sizing: border-box;
     outline: none;
@@ -793,11 +822,11 @@ footer{
     /* outline: 1px solid black; */
     background: transparent;
     padding-left: 10px;
-    color: black;
+    color: white;
     font-weight: 600;
   }
   .input2{
-    color: black;
+    color: black !important;
     border: 1.5px solid rgba(0, 0, 0, 0.5) !important;
     height: 37px !important;
     font-size: 12px !important;
