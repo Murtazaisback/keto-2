@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script type="text/javascript">
         google.charts.load('current', { 'packages': ['corechart'] });
         google.charts.setOnLoadCallback(drawChart);
@@ -219,7 +221,7 @@
                                 </div>
                             </div>
                             <div class="body_shap_box">
-                                <div class="body_shap">
+                                <div class="body_shap" >
                                     <svg id="silhouette" class="body_sha !h-[215px] !w-[114px]"
                                         data-e2e="estimates-graph-male" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 121 215"
@@ -429,7 +431,7 @@
             <section>
                 <div class="final_cards mb-0">
                     <div class="final_card p-0">
-                        <div class="final_card_warp3">
+                        <div class="final_card_warp3" >
                             <div class="final_head p-f">
                                 <h3>Your current <span class="blue_crm">BMI</span></h3>
                                 <div class="mark_q" onclick="toggleDisplay3()">
@@ -437,8 +439,8 @@
                                 </div>
                             </div>
                             <p class="zeta_cr p-f2">Obesity type III</p>
-                            <div class="sliding_gp">
-                                <svg id="bmi-phase-4" class="bmi-animations w-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 345 167" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                            <div class="sliding_gp "  data-aos="fade" data-aos-delay="100"  >
+                                <svg  id="bmi-phase-4" class="bmi-animations w-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 345 167" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
                                     <style>
                                               
                                     
@@ -587,8 +589,8 @@
                                 </div>
                             </div>
                             <p class="zeta_cr">The <b>metabolic age </b> is an indicator for the age of your body</p>
-                            <div class="bars_gp">
-                                <svg id="metabolic-age-phase-1" class="js-metabolic metabolic-age-phase-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 252" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                            <div class="bars_gp" data-aos="fade" data-aos-delay="100">
+                                <svg  id="metabolic-age-phase-1" class=" metabolic-age-phase-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 252" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
                                     <g id="metabolic-age-phase-1-metabolic-age-phase-1">
                                     <g id="metabolic-age-phase-1-pink-bar">
                                     <rect id="metabolic-age-phase-1-pink-main" width="141" height="190" rx="4" ry="4" transform="translate(0 62)" fill="#f53373"></rect>
@@ -635,7 +637,7 @@
                             <p class="zeta_cr mt-10">Recommended</p>
                             <h3 class="uni_h3">2950-3050Cal</h3>
 
-                            <div class="dail_ghp">
+                            <div class="dail_ghp" data-aos="fade" data-aos-delay="100">
                                 <svg id="calories-phase-3" class="js-cal ltr-dir" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 279 180" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
                                     <style>
                                               
@@ -818,8 +820,8 @@
                             <div class="bottle_c">
                                 <div class="bash_top"></div>
                                 <div class="bash_bottom"></div>
-                                <div class="bottle-container">
-                                    <div class="single-bottle">
+                                <div class="bottle-container" data-aos="fade" data-aos-delay="100">
+                                    <div class="single-bottle" >
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 72" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
                                     <g id="bottle-semi-bottle-semi" transform="translate(-90 0)" height="100%">
                                     <path id="bottle-semi-bottle-4_2" d="M98,1c-.5523,0-1,.44772-1,1v2.79815c0,.33435-.1671.64658-.4453.83205L90.8906,9.40627C90.3342,9.7772,90,10.4017,90,11.0704L90,13v.5v54.5c0,2.2091,1.7909,4,4,4h6.146c.523,0,1.002-.2957,1.236-.7639.255-.5093.981-.5093,1.236,0c.234.4682.713.7639,1.236.7639h6.146c2.209,0,4-1.7909,4-4v-54.5-.5-1.9296c0-.6687-.334-1.2932-.891-1.66413L107.445,5.6302c-.278-.18547-.445-.4977-.445-.83205L107,2c0-.55228-.448-1-1-1h-8Z" clip-rule="evenodd" fill="var(--water-bottle)" fill-rule="evenodd"></path>
@@ -868,7 +870,7 @@
                                 <p><b>Based on the WHO</b> the typical daily water loss is between <span class="blue_crm">22.5</span> and
                                     <span class="blue_crm">3 L</span>, and <span class="blue_crm">0.7 L</span> of water daily is supplied through food.</p>
                             </div>
-                            <div class="org_logo">
+                            <div class="org_logo" >
                                 <svg class="logos_crts_5" viewBox="0 0 145 92" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -898,7 +900,7 @@
                             <div class="Recipes_box">
                                 <h4 class="blue_crm">1000+</h4>
                                 <h4>Recipes</h4>
-                                <div class="pan_svg">
+                                <div class="pan_svg" data-aos="fade" data-aos-delay="100">
 
                                 
                                 <svg id="food-icon" class="" viewBox="0 0 165 165" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
@@ -924,7 +926,7 @@
                                 <h3>Why our plan?</h3>
                             </div>
                             <p class="zeta_cr">You can feel confident that <b>YourKeto Meal Plan </b> will get you where you want to be.</p>
-                            <div class="plan_ghp">
+                            <div class="plan_ghp" data-aos="fade" data-aos-delay="100">
                                 <svg class="" viewBox="0 0 285 238" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke="var(--main-color)" stroke-opacity=".1" stroke-linecap="round" stroke-dasharray="8 12" d="M22.5 237.5h262M22.5 195.5h262M22.5 153.5h179M22.5 111.5h262M22.5 69.5h262M22.5 27.5h262"></path>
                                     <path fill="url(#tfhsvngaea)" d="M140 27h62v168h-62z"></path>
@@ -1084,6 +1086,11 @@
 
 
     <script src="./js.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>

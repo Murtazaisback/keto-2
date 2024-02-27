@@ -432,6 +432,36 @@ function handleClick(elementId) {
     firstCheckbox.click();
     handleClick('price10upper');
   };
+
+
+
+
+
+  AOS.init();
+
+  function showPopup() {
+    var overlay = document.getElementById('overlay');
+    var popup = document.getElementById('helpPopup');
+    overlay.style.display = 'block';
+    setTimeout(function() {
+        overlay.style.opacity = 1;
+        popup.style.display = 'block';
+        setTimeout(function() {
+            popup.style.opacity = 1;
+        }, 10);
+    }, 10);
+}
+
+function closePopup() {
+    var overlay = document.getElementById('overlay');
+    var popup = document.getElementById('helpPopup');
+    overlay.style.opacity = 0;
+    popup.style.opacity = 0;
+    setTimeout(function() {
+        overlay.style.display = 'none';
+        popup.style.display = 'none';
+    }, 300);
+}
 //   $(function () {
 //     $("input").keydown(function () {
 //       // Save old value.

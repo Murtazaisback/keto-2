@@ -61,7 +61,7 @@
                 </g>
             </g>
         </svg>
-        <div class="help_button">
+        <div class="help_button"  onclick="showPopup()">
             <div class="qouest_warp"><i class="fa-solid fa-question fa-xs"></i></div>
             help
         </div>
@@ -154,6 +154,15 @@
         </div>
     </main>
 
+
+    <div id="overlay" class="overlay "></div>
+
+    <div id="helpPopup" class="popup">
+        <div class="popup-close" onclick="closePopup()"><i class="fa-solid fa-times fa-lg"></i></div>
+        <!-- Add your popup content here -->
+       <h1>Help</h1>
+       <p class="text-epsilon ">This meal program is individual and takes your body measurements into consideration.</p>
+    </div>
 
 
 
