@@ -2425,7 +2425,7 @@ input, select, textarea {
     margin: 3rem auto;
     margin-bottom: 2rem;
     background: white;
-    width: 100%;
+    width: 940px;
     border-radius: 0.5rem;
     display: flex;
     max-width: fit-content;
@@ -2458,6 +2458,9 @@ input, select, textarea {
     height: 1.75rem;
     align-items: center;
     margin: 0 94px;
+}
+.trust_first_img img{
+    width: 100%;
 }
 .trust_sec_img{
     display: flex;
@@ -2962,6 +2965,9 @@ input, select, textarea {
     width: 192px;
     height: 22px;
 }
+img{
+    width: 100%;
+}
 .revie_col2{
     max-width: 335px;
     padding: 38px 1.25rem;
@@ -3020,6 +3026,9 @@ input, select, textarea {
     margin: 0 auto;
     height: 4.5rem;
     width: 4.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 .developed_box_dc{
     max-width: 305px;
@@ -3100,6 +3109,7 @@ input, select, textarea {
         flex-direction: column;
         flex-wrap: wrap;
         margin-bottom: 2rem;
+        width: auto;
     }
     .testimonials_h2{
         padding-bottom: 2rem;
