@@ -771,7 +771,13 @@ footer{
 .none-of-above:hover {
     outline: 2px solid var(--theta);
 }
+.Continue_btn_warp{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
 .Continue_btn{
+    display: block;
     background: var(--theta);
     border: none;
     outline: none;
@@ -782,8 +788,6 @@ footer{
     width: 100% ;
     border-radius: 50px;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
-    margin-top: 30px;
-    margin-bottom: 100px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -1453,6 +1457,7 @@ footer{
     display: flex;
     justify-content: center;
     margin: 30px 0;
+    width: 100%;
 }
 
 .button_res_a{
@@ -1844,7 +1849,12 @@ footer{
   .peer:checked + .peer svg {
     opacity: 1;
   }
+  #email-button-wrapper{
+    width: 100%;
+    display: block;
+  }
   .con_bbtn{
+    display: block;
     background: var(--theta) !important;
     box-shadow:var(--thetadrop) !important;
     border-radius: 25px; 
@@ -1854,7 +1864,7 @@ footer{
     box-shadow: var(--thetadrop);
     /* min-height: 50px; */
     padding: 10px 190px;
-    width: 460px;
+    width: 100%;
     font-weight: 700;
     color: white;
     text-align: center;
@@ -2335,10 +2345,15 @@ input, select, textarea {
     justify-content: center;
     gap: 10px;
 }
+.buton_pay_i_wap a{
+    text-decoration: none;
+}
 .buton_pay_i_wap span{
     text-align: center;
     font-size: 1rem;
     font-weight: 700;
+    text-decoration: none;
+    color: white;
 }
 .apply-promo-code{
     margin: 0 auto;
@@ -3079,7 +3094,110 @@ img{
 }
 
 
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px !important;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 90% !important;
+  bottom: 100px !important;
+  transform: translateX(-50%);
+  z-index: 10; /* Ensure the buttons appear on top of pagination */
+  color: white !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 29px !important;
+}
+
+.swiper-button-next {
+  right: 20px !important; /* Adjust this value to change the distance from the right */
+}
+
+.swiper-button-prev {
+  left: 20px !important; /* Adjust this value to change the distance from the left */
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 368px) {
+
+    .swiper{
+        width: 235px;
+    }
+}
 @media screen and (max-width: 768px) {
+    .swiper{
+        width: 335px;
+    }
+    .what_you_p{
+        width: 90%;
+    }
+    .promo_warp{
+        margin: 0;
+        width: 100%;
+    }
+    .promo_box{
+        width: 90%;
+    }
+    .con_bbtn{
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .button_res_full{
+        display: none;
+    }
+    .button_res{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        background: var(--delta);
+        padding: 20px;
+        z-index: 100000;
+    }
+    .button_res a{
+        padding: 10px 20px;
+    }
+    .main_warp{
+        margin-top: 50px;
+    }
+    .final_heading{
+        margin-bottom: 40px;
+    }
+    .Continue_btn_warp{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+        margin: 0 auto;
+        width: 100%;
+        background: var(--delta);
+
+    }
     .footer_imgs_war{
         display: flex;
         padding: 0.75rem 0;
@@ -3168,6 +3286,7 @@ img{
     }
     .final_heading h1{
         text-align: center;
+        font-size: 25px;
     }
     .button_res_a{
         padding: 5px;
@@ -3177,6 +3296,7 @@ img{
         align-items: center;
     justify-content: center;
     margin: auto;
+    margin-bottom: 200px;
     }
     .text_animation{
         width: 250px;
@@ -3198,6 +3318,7 @@ img{
     }
     .options{
         width: 90%;
+        margin-bottom: 200px;
     }
     .option {
         width: 100%;
@@ -3206,7 +3327,7 @@ img{
         width: 100%;
     }
     .letter_warp{
-        width: 300px;
+        width: 335px;
     }
     .svg_top_letter{
         width: 200px;
@@ -3221,7 +3342,7 @@ img{
     }
     .plan_grid{
         flex-direction: column;
-        gap: 10px;
+        gap: 30px;
         margin-top: 20px;
         align-items: center;
     }
