@@ -340,17 +340,20 @@ function checkInputColor() {
 }
 
 const checkbox = document.getElementById('myCheckbox');
-const checkboxContainer = document.getElementById('checkboxContainer');
-const checkIcon = document.getElementById('checkIcon');
+const checkboxContainer = document.querySelector('.checkboxContainer');
+const checkIcon = checkboxContainer.querySelector('i.fa-check');
 
-checkbox.addEventListener('change', function() {
-  checkboxContainer.classList.toggle('bg-transparent', !this.checked);
-  checkboxContainer.classList.toggle('bg-blue-500', this.checked);
-  checkIcon.classList.toggle('hidden', !this.checked);
+checkbox.addEventListener('change', function () {
+    if (this.checked) {
+        checkboxContainer.classList.remove('bg-transparent');
+        checkboxContainer.classList.add('bg-blue-500');
+        checkIcon.classList.remove('hidden');
+    } else {
+        checkboxContainer.classList.remove('bg-blue-500');
+        checkboxContainer.classList.add('bg-transparent');
+        checkIcon.classList.add('hidden');
+    }
 });
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
     var header = document.querySelector('.sticky-header');

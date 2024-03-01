@@ -241,8 +241,10 @@ nav{
 }
 .nav_icon{
     cursor: pointer;
+    font-weight: 300;
 }
 .menu_header{
+    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2717,6 +2719,9 @@ input, select, textarea {
 }
 .checkboxContainer i{
     transition: all 0.3s ease-in-out;;
+}
+.bg-blue-500{
+    background: #019aff;
 }
 
 .email-button-wrapper{
