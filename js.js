@@ -339,6 +339,7 @@ function checkInputColor() {
     }
 }
 
+
 const checkbox = document.getElementById('myCheckbox');
 const checkboxContainer = document.querySelector('.checkboxContainer');
 const checkIcon = checkboxContainer.querySelector('i.fa-check');
