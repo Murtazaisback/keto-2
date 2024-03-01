@@ -1,8 +1,13 @@
-function toggleMenu() {
-    var menu = document.querySelector('menu');
-    menu.style.right = (menu.style.right === '0px' || menu.style.right === '') ? '-400px' : '0';
-}
+document.addEventListener('DOMContentLoaded', function () {
+  // Set the initial state of the menu
+  var menu = document.querySelector('menu');
+  menu.style.right = '-400px';
+});
 
+function toggleMenu() {
+  var menu = document.querySelector('menu');
+  menu.style.right = (menu.style.right === '0px' || menu.style.right === '') ? '-400px' : '0';
+}
 
 
 // let currentQuestion = 1;
@@ -266,7 +271,15 @@ function checkInputColor() {
     window.location.href = './11.html';
   }
 
-  function toggleDisplay() {
+  document.addEventListener('DOMContentLoaded', function () {
+    // Set the initial state for the first card
+    var finalCardWarp = document.querySelector('.final_card_warp');
+    var finalCardText = document.querySelector('.final_card_text');
+    finalCardWarp.style.opacity = '1';
+    finalCardText.style.opacity = '0';
+});
+
+function toggleDisplay() {
     var finalCardWarp = document.querySelector('.final_card_warp');
     var finalCardText = document.querySelector('.final_card_text');
 
@@ -278,7 +291,15 @@ function checkInputColor() {
         finalCardText.style.opacity = '0';
     }
 }
-  function toggleDisplay2() {
+  document.addEventListener('DOMContentLoaded', function () {
+    // Set the initial state for the first card
+    var finalCardWarp = document.querySelector('.final_card_warp2');
+    var finalCardText = document.querySelector('.none_2');
+    finalCardWarp.style.opacity = '1';
+    finalCardText.style.opacity = '0';
+});
+
+function toggleDisplay2() {
     var finalCardWarp = document.querySelector('.final_card_warp2');
     var finalCardText = document.querySelector('.none_2');
 
@@ -290,7 +311,16 @@ function checkInputColor() {
         finalCardText.style.opacity = '0';
     }
 }
-  function toggleDisplay3() {
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Set the initial state for the first card
+    var finalCardWarp = document.querySelector('.final_card_warp3');
+    var finalCardText = document.querySelector('.none_3');
+    finalCardWarp.style.opacity = '1';
+    finalCardText.style.opacity = '0';
+});
+
+function toggleDisplay3() {
     var finalCardWarp = document.querySelector('.final_card_warp3');
     var finalCardText = document.querySelector('.none_3');
 
@@ -302,7 +332,16 @@ function checkInputColor() {
         finalCardText.style.opacity = '0';
     }
 }
-  function toggleDisplay4() {
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Set the initial state for the first card
+    var finalCardWarp = document.querySelector('.final_card_warp4');
+    var finalCardText = document.querySelector('.none_4');
+    finalCardWarp.style.opacity = '1';
+    finalCardText.style.opacity = '0';
+});
+
+function toggleDisplay4() {
     var finalCardWarp = document.querySelector('.final_card_warp4');
     var finalCardText = document.querySelector('.none_4');
 
@@ -314,7 +353,16 @@ function checkInputColor() {
         finalCardText.style.opacity = '0';
     }
 }
-  function toggleDisplay5() {
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Set the initial state for the first card
+    var finalCardWarp = document.querySelector('.final_card_warp5');
+    var finalCardText = document.querySelector('.none_5');
+    finalCardWarp.style.opacity = '1';
+    finalCardText.style.opacity = '0';
+});
+
+function toggleDisplay5() {
     var finalCardWarp = document.querySelector('.final_card_warp5');
     var finalCardText = document.querySelector('.none_5');
 
@@ -326,7 +374,15 @@ function checkInputColor() {
         finalCardText.style.opacity = '0';
     }
 }
-  function toggleDisplay6() {
+  document.addEventListener('DOMContentLoaded', function () {
+    // Set the initial state for the first card
+    var finalCardWarp = document.querySelector('.final_card_warp6');
+    var finalCardText = document.querySelector('.none_6');
+    finalCardWarp.style.opacity = '1';
+    finalCardText.style.opacity = '0';
+});
+
+function toggleDisplay6() {
     var finalCardWarp = document.querySelector('.final_card_warp6');
     var finalCardText = document.querySelector('.none_6');
 
@@ -339,6 +395,8 @@ function checkInputColor() {
     }
 }
 
+
+  
 
 const checkbox = document.getElementById('myCheckbox');
 const checkboxContainer = document.querySelector('.checkboxContainer');
